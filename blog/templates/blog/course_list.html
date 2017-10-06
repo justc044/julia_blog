@@ -11,15 +11,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   </head>
   <body>
-    <h1>List of Courses</h1>
+    <h1 class="display-4">Courses</h1>
+
+    <br>
 
     {% for course in courses %}
 
-      {{ course }}<br>
+    <p class="lead">{{ course.title }}</p>
+    <p>{{ course.description }}</p>
 
     {% endfor %}
-
-    <br>
 
     <a href="../">Main Page</a>
 
